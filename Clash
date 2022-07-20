@@ -1,3 +1,4 @@
+
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -37,8 +38,8 @@ experimental:
 
 proxies:
   - {name: 🇱🇰 Server 1 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: m.linkedin.com}}}
-  - {name: 🇱🇰 Server 2 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: cdn.whatsapp.com}}}
-  - {name: 🇱🇰 Server 3 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: static.whatsapp.net}}}
+  - {name: 🇱🇰 Server 2 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: m.linkedin.com}}}
+  - {name: 🇱🇰 Server 3 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: m.linkedin.com}}}
 
 proxy-groups:
   - name: 🌀UDM-CONFIGURATION🌀
@@ -62,3 +63,5 @@ proxy-groups:
       - "🇱🇰 Server 3 🇱🇰"
     url: http://www.gstatic.com/generate_204
     interval: 300
+rules:
+  - MATCH,, 🌀UDM-CONFIGURATION🌀
