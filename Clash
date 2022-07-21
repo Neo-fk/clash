@@ -40,9 +40,10 @@ proxies:
   - {name: 🇱🇰 Server 1 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: m.linkedin.com}}}
   - {name: 🇱🇰 Server 2 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: m.linkedin.com}}}
   - {name: 🇱🇰 Server 3 🇱🇰, server: 194.233.80.61, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1804849544/62d4d3ffb0d6f/, headers: {Host: m.linkedin.com}}}
-
+  - {name: 🇱🇰 Server 4 🇱🇰, server: 103.253.24.226, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62d9be0d708ab/, headers: {Host: m.linkedin.com}}}
+  
 proxy-groups:
-  - name: 🌀UDM-CONFIGURATION🌀
+  - name: VPN CONFIG
     type: select
     proxies:
       - "Best Ping ✓"
@@ -53,6 +54,7 @@ proxy-groups:
       - "🇱🇰 Server 1 🇱🇰"
       - "🇱🇰 Server 2 🇱🇰"
       - "🇱🇰 Server 3 🇱🇰"
+      - "🇱🇰 Server 4 🇱k"
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: LOAD BALANCE  ✓
