@@ -54,7 +54,7 @@ proxy-groups:
       - "🇱🇰 Server 1 🇱🇰"
       - "🇱🇰 Server 2 🇱🇰"
       - "🇱🇰 Server 3 🇱🇰"
-      - "🇱🇰 Server 4 🇱🇰"
+     
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: LOAD BALANCE  ✓
