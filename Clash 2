@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: 翻墙党fanqiangdang.com, server: best03.downloadmovie.cn, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, sni: best03.downloadmovie.cn, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}}
+  - {name: 翻墙党fanqiangdang.com, server: best03.downloadmovie.cn, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, sni: best03.downloadmovie.cn, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /rocket, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
