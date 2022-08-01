@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: sgt1.sshocean.net, server: sgt1.sshocean.net, port: 443, udp: true, type: trojan, password: 9558e492-45df-466e-8114-59c8199e57ad, sni: , skip-cert-verify: true}
+  - {name: , server: , port: , type: vmess, uuid: , sni: , alterId: , cipher: auto, tls: , skip-cert-verify: true, udp: true, network: , ws-opts: {path: , headers: {Host: }}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - sgt1.sshocean.net
+      - 
 
 rules:
  - MATCH,sshkit-generator
