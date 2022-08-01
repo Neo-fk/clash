@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: 翻墙党fanqiangdang.com, server: best03.downloadmovie.cn, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, sni: best03.downloadmovie.cn, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /rocket, headers: {Host: ar.linkedin.com}}}
+  - {name: sg2-v2ray.sshkit.org, server: sg2-v2ray.sshkit.org, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62dd90a835c83/, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - 翻墙党fanqiangdang.com
+      - sg2-v2ray.sshkit.org
 
 rules:
  - MATCH,sshkit-generator
