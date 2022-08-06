@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: sg3.v2rayserv.com , server: sg3.v2rayserv.com , port: 443, type: vmess, uuid: f3ac784d-7dd4-4501-afcf-2568741292f8 , sni: ar.linkedin.com alterId:, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: , ws-opts: {path: /sshocean, headers: {Host: ar,linkedin.com
+  - {name: dynamic-sg1b.obfs.xyz, server: dynamic-sg1b.obfs.xyz, port: 443, type: vmess, uuid: 683e2313-6fc8-4506-b685-8b785ffc5148, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - anuwa
+      - dynamic-sg1b.obfs.xyz
 
 rules:
  - MATCH,sshkit-generator
