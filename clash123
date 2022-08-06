@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: vmess_singapore, server: sg-v2ray.freevmess.com, port: 8443, type: vmess, uuid: 53916f6a-03e2-4d7c-f337-14c013c29301, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: vmess_singapore, server: sg-v2ray.freevmess.com, port: 8443, type: vmess, uuid: 53916f6a-03e2-4d7c-f337-14c013c29301, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: ar.linkedin.com }}}
 
 proxy-groups:
   - name: sshkit-generator
