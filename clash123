@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: vmess_singapore, server: sg-v2ray.freevmess.com, port: 8443, type: vmess, uuid: 53916f6a-03e2-4d7c-f337-14c013c29301, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: ar.linkedin.com }}}
+  - {name: racevpn_sg3vmess, server: sg3-v2ray.racevpn.com, port: 8443, type: vmess, uuid: 6faf38a6-ad07-40d5-ad17-bb1e2d352fed, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - vmess_singapore
+      - racevpn_sg3vmess
 
 rules:
  - MATCH,sshkit-generator
