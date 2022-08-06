@@ -43,7 +43,7 @@ proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - 
+      - anuwa
 
 rules:
  - MATCH,sshkit-generator
