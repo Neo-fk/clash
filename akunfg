@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: ws_tls_jrtunnel.com_ffsdfswef, server: sg3vms.jrtunnel.us, port: 443, type: vmess, uuid: 462ac796-91b8-45f6-8b26-cc95cd5941d4, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /jrtunnel-vmess?user=jrtunnel.com-ffsdfswef, headers: {Host: ar.linkedin.com}}}
+  - {name: speedyssh.com-wrdfdffsff, server: Host: v2ray-sg01.bmqb.net, port: 443, type: vmess, uuid: a9ada9ca-4f73-465f-8471-f99bb5f48578, sni: Host: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /speedyssh, headers: {ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - ws_tls_jrtunnel.com_ffsdfswef
+      - speedyssh.com-wrdfdffsff
 
 rules:
  - MATCH,sshkit-generator
