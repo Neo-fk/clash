@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: drfgagdasd-vpnjantit.com, server: sgv1.vpnjantit.com, port: 10001, type: vmess, uuid: 2e916c7e-16a0-11ed-8196-6bbf32417c6b, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: }}}
+  - {name: drfgagdasd-vpnjantit.com, server: sgv1.vpnjantit.com, port: 10001, type: vmess, uuid: 2e916c7e-16a0-11ed-8196-6bbf32417c6b, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: ar.linkedin.com }}}
 
 proxy-groups:
   - name: sshkit-generator
