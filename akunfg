@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: akunssh-fdfddzfdz, server: sg1.vmess.tunnel.cx, port: 443, type: vmess, uuid: 608f9490-1672-11ed-b313-bfe7f9bdd2b4, sni: sg1.vmess.tunnel.cx, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1.vmess.tunnel.cx}}}
+  - {name: akunssh-fdfddzfdz, server: sg1.vmess.tunnel.cx, port: 443, type: vmess, uuid: 608f9490-1672-11ed-b313-bfe7f9bdd2b4, sni: sg1.vmess.tunnel.cx, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
