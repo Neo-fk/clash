@@ -1,3 +1,4 @@
+
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -36,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: akunssh-fdfddzfdz, server: sg1.vmess.tunnel.cx, port: 443, type: vmess, uuid: 608f9490-1672-11ed-b313-bfe7f9bdd2b4, sni: sg1.vmess.tunnel.cx, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ar.linkedin.com}}}
+  - {name: ws_tls_jrtunnel.com_ffsdfswef, server: sg3vms.jrtunnel.us, port: 443, type: vmess, uuid: 462ac796-91b8-45f6-8b26-cc95cd5941d4, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /jrtunnel-vmess?user=jrtunnel.com-ffsdfswef, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - akunssh-fdfddzfdz
+      - ws_tls_jrtunnel.com_ffsdfswef
 
 rules:
  - MATCH,sshkit-generator
