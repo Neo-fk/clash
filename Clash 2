@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: sg2-v2ray.sshkit.org, server: sg2-v2ray.sshkit.org, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62dd90a835c83/, headers: {Host: ar.linkedin.com}}}
+  - {name: speedyssh.com-wrdfdffsff, server: v2ray-sg01.bmqb.net, port: 443, type: vmess, uuid: a9ada9ca-4f73-465f-8471-f99bb5f48578, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /speedyssh, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - sg2-v2ray.sshkit.org
+      - speedyssh.com-wrdfdffsff
 
 rules:
  - MATCH,sshkit-generator
