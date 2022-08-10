@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: akunssh-fdfddzfdz, server: sg1.vmess.tunnel.cx, port: 443, type: vmess, uuid: b55e0bda-1804-11ed-9e16-e3c831604d22, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ar.linkedin.com}}}
+  - {name: whyvpn-hgfhgvhgv, server: do2.kitu.xyz, port: 443, type: vmess, uuid: 44dd876b-e15d-4c4d-9e82-5e0fa1bf3c8e, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess/, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
@@ -45,7 +45,7 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - akunssh-fdfddzfdz
+      - whyvpn-hgfhgvhgv
 
 rules:
  - MATCH,sshkit-generator
