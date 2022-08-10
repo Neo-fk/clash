@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: XAcxB_sg.v2ray.pw-tls, server: sg.v2ray.pw, port: 443, type: vmess, uuid: 18b24633-3da5-40c9-aa4a-7f94afbeb5f6, sni: sg.v2ray.pw, alterId: 64, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /lionssh/, headers: {Host: ar.linkedin.com}}}
+  - {name: XAcxB_sg.v2ray.pw-tls, server: sg.v2ray.pw, port: 443, type: vmess, uuid: 18b24633-3da5-40c9-aa4a-7f94afbeb5f6, sni: ar.linkedin.com, alterId: 64, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /lionssh/, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
