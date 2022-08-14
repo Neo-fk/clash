@@ -1,4 +1,3 @@
-
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -37,13 +36,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: andrusoyas-vpnjantit.com, server: sggs3.vpnjantit.com, port: 10001, type: vmess, uuid: 5d939f74-1ba5-11ed-bee4-00163e5de8a8, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: ar.linkedin.com }}}
+  - {name: firenet_frsfgrsfgrg, server: 6agn.firenetvpn.com, port: , type: vmess, uuid: 2ecc8637-e0e2-489a-ae72-110361388518, sni: ar.linkedin.com , alterId: 2, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /store, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - andrusoyas-vpnjantit.com
+      - firenet_frsfgrsfgrg
 
 rules:
  - MATCH,sshkit-generator
