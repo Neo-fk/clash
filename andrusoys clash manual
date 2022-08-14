@@ -37,13 +37,15 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: firenet_frsfgrsfgrg, server: 6agn.firenetvpn.com, port:  8443, type: vmess, uuid: 2ecc8637-e0e2-489a-ae72-110361388518, sni: ar.linkedin.com, alterId: 2, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /store, headers: {Host: ar.linkedin.com}}}
+  - {name: NERTEAM, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
-    type: select
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
     proxies:
-      - firenet_frsfgrsfgrg
+      - NERTEAM
 
 rules:
  - MATCH,sshkit-generator
