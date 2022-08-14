@@ -1,3 +1,4 @@
+
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -36,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: firenet_frsfgrsfgrg, server: 6agn.firenetvpn.com, port: , type: vmess, uuid: 2ecc8637-e0e2-489a-ae72-110361388518, sni: ar.linkedin.com , alterId: 2, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /store, headers: {Host: ar.linkedin.com}}}
+  - {name: firenet_frsfgrsfgrg, server: 6agn.firenetvpn.com, port: , type: vmess, uuid: 2ecc8637-e0e2-489a-ae72-110361388518, sni: ar.linkedin.com, alterId: 2, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /store, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
