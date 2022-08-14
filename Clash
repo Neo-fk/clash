@@ -38,7 +38,9 @@ experimental:
 
 proxies:
   - {name: 🇱🇰 Server 1 🇱🇰, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: / , headers: {Host: ar.linkedin.com}}}
-  
+  - {name: 🇱🇰 Server 2 🇱🇰, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: / , headers: {Host: ar.linkedin.com}}}
+  - {name: 🇱🇰 Server 3 🇱🇰, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: / , headers: {Host: ar.linkedin.com}}}
+
 proxy-groups:
   - name: 🌀UDM-CONFIGURATION🌀
     type: select
