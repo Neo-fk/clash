@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: v2ray3.udpgw.com, server: v2ray3.udpgw.com, port: 443, type: vmess, uuid: 26ef6efa-9ee4-4707-80bd-5ed9898db615, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /howdy, headers: {Host: ar.linkedin.com}}}
+  - {name: sshkit-generator, server: 103.253.24.224, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62fa53a3a5586/, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
