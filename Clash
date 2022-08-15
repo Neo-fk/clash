@@ -37,9 +37,12 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: 🇱🇰 Server 1 🇱🇰, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: / , headers: {Host: ar.linkedin.com}}}
-  - {name: 🇱🇰 Server 2 🇱🇰, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: / , headers: {Host: ar.linkedin.com}}}
-  - {name: 🇱🇰 Server 3 🇱🇰, server: 13.229.218.42, port: 15685, type: vmess, uuid: 368ef013-16ff-453f-9ce7-b990813edbae, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: / , headers: {Host: ar.linkedin.com}}}
+  - {name: 🇱🇰 Server 1 🇱🇰, server: 159.89.204.145, port: 80, type: vmess, uuid: 23e267c6-7216-4e99-8e3c-a9a2b94f7dee, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess/ , headers: {Host: ar.linkedin.com}}}
+  - {name: 🇱🇰 Server 2 🇱🇰, server: 51.79.243.155, port: 80, type: vmess, uuid: 39b97649-4ebc-4a07-88a7-3735ee688452, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: ar.linkedin.com}}}
+  - {name: 🇱🇰 Server 3 🇱🇰, server: 194.233.80.103, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/fggfcg/62fa52608c627/, headers: {Host: ar.linkedin.com}}}   
+  - {name: 🇱🇰 Server 4 🇱🇰, server: 15.235.162.8, port: 80, type: vmess, uuid: 6a3b02c8-8453-4ca6-a1b4-3ac5f781709c, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ar.linkedin.com}}}
+  - {name: 🇱🇰 Server 5 🇱🇰, server: 103.253.24.224, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62fa53a3a5586/, headers: {Host: ar.linkedin.com}}}
+proxy-groups:
 
 proxy-groups:
   - name: 🌀UDM-CONFIGURATION🌀
@@ -53,6 +56,8 @@ proxy-groups:
       - "🇱🇰 Server 1 🇱🇰"
       - "🇱🇰 Server 2 🇱🇰"
       - "🇱🇰 Server 3 🇱🇰"
+      - "🇱🇰 Server 4 🇱🇰"
+      - "🇱🇰 Server 5 🇱🇰"
      
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -62,6 +67,9 @@ proxy-groups:
       - "🇱🇰 Server 1 🇱🇰"
       - "🇱🇰 Server 2 🇱🇰"
       - "🇱🇰 Server 3 🇱🇰"
+      - "🇱🇰 Server 4 🇱🇰"
+      - "🇱🇰 Server 5 🇱🇰"
+      
     url: http://www.gstatic.com/generate_204
     interval: 300
 rules:
