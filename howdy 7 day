@@ -43,7 +43,7 @@ proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - v2ray3.udpgw.com
+      - sshkit-generator
 
 rules:
  - MATCH,sshkit-generator
