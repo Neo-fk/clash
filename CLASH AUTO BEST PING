@@ -36,7 +36,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: Gaming sv 1, server: 159.89.204.145, port: 80, type: vmess, uuid: 23e267c6-7216-4e99-8e3c-a9a2b94f7dee, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess/ , headers: {Host: ar.linkedin.com}}}
+  
   - {name: Gaming sv 2, server: 51.79.243.155, port: 80, type: vmess, uuid: 39b97649-4ebc-4a07-88a7-3735ee688452, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: ar.linkedin.com}}}
   - {name: Gaming sv 3, server: 194.233.80.103, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/fggfcg/62fa52608c627/, headers: {Host: ar.linkedin.com}}}   
   - {name: Gaming sv 4, server: 15.235.162.8, port: 80, type: vmess, uuid: 6a3b02c8-8453-4ca6-a1b4-3ac5f781709c, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ar.linkedin.com}}}
@@ -48,7 +48,7 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - Gaming sv 1
+      
       - Gaming sv 2
       - Gaming sv 3
       - Gaming sv 4
