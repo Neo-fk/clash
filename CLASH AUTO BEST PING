@@ -53,11 +53,11 @@ proxy-groups:
       - Gaming sv 3
       - Gaming sv 4
       - Gaming sv 5
-      - Gaming sv 6
-      - Gaming sv 7
-      - Gaming sv 8
-      - Gaming sv 9
-      - Gaming sv 10
+      //- Gaming sv 6
+     // - Gaming sv 7
+     // - Gaming sv 8
+     // - Gaming sv 9
+     // - Gaming sv 10
 
 rules:
  - MATCH,ANUWA-------CLASH_FOR_GAMING
