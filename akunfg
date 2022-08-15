@@ -37,7 +37,7 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: speedyssh.com-wrdfdffsff, server: Host: v2ray-sg01.bmqb.net, port: 443, type: vmess, uuid: a9ada9ca-4f73-465f-8471-f99bb5f48578, sni: Host: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /speedyssh, headers: {ar.linkedin.com}}}
+  - {name: speedyssh.com-wrdfdffsff, server: 103.253.24.224, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62fa53a3a5586/, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
