@@ -45,7 +45,7 @@ proxies:
   - {name: Gaming sv 7, server: 103.253.24.248, port: 443, udp: true, type: trojan, password: 07817250-1cbc-11ed-94a7-1239d0255272, sni: ar.linkedin.com, skip-cert-verify: true}
 proxy-groups:
   - name: ANUWA----CLASH_FOR_GAMING
-    type: url-test
+    type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
