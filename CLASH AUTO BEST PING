@@ -43,7 +43,7 @@ proxies:
   - {name: Gaming sv 5, server: 103.253.24.224, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62fa53a3a5586/, headers: {Host: ar.linkedin.com}}}
   - {name: Gaming sv 6, server: 50.7.60.60, port: 80, type: vmess, uuid: 001e2434-3c64-4b6c-aafa-54f7e48aec5e, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /herbalserver, headers: {Host: ar.linkedin.com}}}
   - {name: Gaming sv 7, server: 103.253.24.248, port: 443, udp: true, type: trojan, password: 07817250-1cbc-11ed-94a7-1239d0255272, sni: ar.linkedin.com, skip-cert-verify: true}
-  - {name: ✅ UDM | Paid Privet Vmess ( TLS ) ✅, server: dilshanmadusankha.tk, port: 443, type: vmess, uuid: 4068e72c-bec9-4eee-ad38-e853bdb64cc8, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /UDM-PAID-V2RAYvws?ed=2048, headers: {Host: ar.linkedin.com}}}
+  - {name: ✅ UDM | Paid Privet Vmess ( TLS ) ✅, server: dilshanmadusankha.tk, port: 443, udp: true, type: trojan, password: 4068e72c-bec9-4eee-ad38-e853bdb64cc8, sni: , skip-cert-verify: true}
 proxy-groups:
   - name: ANUWA----CLASH_FOR_GAMING
     type: select
