@@ -37,13 +37,11 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: speedyssh.com-wrdfdffsff, server: v2ray-sg01.bmqb.net, port: 443, type: vmess, uuid: a9ada9ca-4f73-465f-8471-f99bb5f48578, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /speedyssh, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - speedyssh.com-wrdfdffsff
 
 rules:
  - MATCH,sshkit-generator
