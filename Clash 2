@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: vmess(ws) #FreeDataZone, server: freedatazone.com, port: 3, type: vmess, uuid: 032bac07-21f3-4bac-efc3-628255b71ef2, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
+  - {name: vmess87, server: freedatazone.com, port: 3, type: vmess, uuid: 032bac07-21f3-4bac-efc3-628255b71ef2, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
 
 proxy-groups:
   - name: sshkit-generator
     type: select
     proxies:
-      - vmess(ws) #FreeDataZone
+      - vmess87
 
 rules:
  - MATCH,sshkit-generator
