@@ -1,0 +1,85 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+bind-address: "*"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7894
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  nameserver:
+    - https://puredns.org/dns-query
+    - tls://puredns.org:853
+    
+  fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - 108.137.44.39
+    - 108.137.44.9
+tun:
+  enable: true
+  stack: system 
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - tcp://108.137.44.39:53
+experimental:
+  interface-name: en0
+
+proxies:
+  - {name: NER FREE WEEK, server: 170.187.225.242, port: 22596, type: vmess, uuid: 6fd2f643-2a25-41c7-8eae-c4673a119b0d, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
+  - {name: Gaming sv 2, server: 51.79.243.155, port: 80, type: vmess, uuid: 39b97649-4ebc-4a07-88a7-3735ee688452, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: ar.linkedin.com}}}
+  - {name: Gaming sv 3, server: 194.233.80.103, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/fggfcg/62fa52608c627/, headers: {Host: ar.linkedin.com}}}   
+  - {name: Gaming sv 4, server: 15.235.162.8, port: 80, type: vmess, uuid: 6a3b02c8-8453-4ca6-a1b4-3ac5f781709c, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ar.linkedin.com}}}
+  - {name: Gaming sv 5, server: 103.253.24.224, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /sshkit/1961399977/62fa53a3a5586/, headers: {Host: ar.linkedin.com}}}
+  - {name: Gaming sv 6, server: 50.7.60.60, port: 80, type: vmess, uuid: 001e2434-3c64-4b6c-aafa-54f7e48aec5e, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /herbalserver, headers: {Host: ar.linkedin.com}}}
+  - {name: tojan, server: 172.104.40.247, port: 443, udp: true, type: trojan, password: 911b2c17-4d6c-4ae1-b214-906c2831e44c, sni: ar.linkedin.com, skip-cert-verify: true}
+  - {name: sxtcp-wadafwaffw, server: 50.7.60.60, port: 443, type: vmess, uuid: c816ea02-f790-41ca-8b97-50c1330d1e53, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /herbalserver, headers: {Host: ar.linkedin.com}}}
+  - {name: sxtcp-xdzsdfs, server: 50.7.60.60, port: 443, type: vmess, uuid: 525619de-2798-4991-afc5-eb90f070c8cd, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /herbalserver, headers: {Host: ar.linkedin.com}}} 
+  - {name: sxtcp-esffsergfesg, server: 50.7.60.60, port: 443, type: vmess, uuid: b229edab-c6f1-42ab-875a-22a1f942cc02, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /herbalserver, headers: {Host: ar.linkedin.com}}}
+  - {name: Drv2rayPaidDr, server: 103.253.24.98, port: 443, type: vmess, uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/drv2rayapaid/6311c418852bc/, headers: {Host: ar.linkedin.com}}}
+  - {name: herbal 2, server: 50.7.60.60, port: 80, type: vmess, uuid: b229edab-c6f1-42ab-875a-22a1f942cc02, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /herbalserver, headers: {Host: ar.linkedin.com}}}
+  - {name: vmess-ws-tls, server: sg-full.privateip.net, port: 443, type: vmess, uuid: 404a3349-53c5-4e61-b354-c95e654a9c36, sni: ar.linkedin.com , alterId: 0, cipher: auto, tls:, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: ar.linkedin.com}}}
+  - {name: Drv2ray Vmess, server: 103.253.24.254, port: 443, type: vmess, uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fastssh/drehi/631c194705b6b/, headers: {Host: ar.linkedin.com}}}
+  - {name: vmess(ws), server: 172.104.34.133, port: 3, type: vmess, uuid: 032bac07-21f3-4bac-efc3-628255b71ef2, sni: ar.linkedin.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
+  - {name: yjgjmg, server: 165.22.105.125, port: 443, udp: true, type: trojan, password: yjgjmg, sni: ar.linkedin.com, skip-cert-verify: true}
+  - {name: Vmess_Websocket, server: madush.duckdns.org, port: 40515, type: vmess, uuid: f0e69c63-99e9-455c-a8ae-cbab068c7481, sni: ar.linkedin.com , alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
+
+
+
+proxy-groups:
+  - name: ANUWA----CLASH_FOR_GAMING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+  
+    proxies:
+      - NER FREE WEEK
+      - Gaming sv 2
+      - Gaming sv 3
+      - Gaming sv 4
+      - Gaming sv 5
+      - Gaming sv 6
+      - tojan
+      - sxtcp-wadafwaffw
+      - Drv2rayPaidDr
+      - sxtcp-esffsergfesg
+      - vmess-ws-tls
+      - Drv2ray Vmess
+      - vmess(ws)
+      - yjgjmg
+      - Vmess_Websocket
+      
+rules:
+ - MATCH,ANUWA----CLASH_FOR_GAMING
